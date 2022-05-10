@@ -1,0 +1,34 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item {
+  width: 200px;
+  height: 200px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-item.green {
+  background-color: green;
+}
+.slider-item.red {
+  background-color: red;
+}
+.slider-item {
+  background-color: blue;
+}
+.slider-item {
+  background-color: tomato;
+}
+.slider-item {
+  background-color: teal;
+}
+.slider-item {
+  background-color: brown;
+}
