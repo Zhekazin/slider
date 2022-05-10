@@ -5,22 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" 
+    href="./CSS/styles.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="slider swiper-wrapper">
-                <div class="slider-item green swiper-slide">1</div>
-                <div class="slider-item red swiper-slide">2</div>
-                <div class="slider-item blu swiper-slide">3</div>
-                <div class="slider-item tomato swiper-slide">4</div>
-                <div class="slider-item teal swiper-slide">5</div>
-                <div class="slider-item brawn swiper-slide">6</div>
-
+            <div class="swiper mySwiper">
+                <div class="slider swiper-wrapper">               
+                    <div class="slider-item green swiper-slide">1</div>
+                    <div class="slider-item red swiper-slide">2</div>
+                    <div class="slider-item blu swiper-slide">3</div>
+                    <div class="slider-item tomato swiper-slide">4</div>
+                    <div class="slider-item teal swiper-slide">5</div>
+                    <div class="slider-item brawn swiper-slide">6</div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
-      
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+                    pagination: {
+                el: ".swiper-pagination",
+                clickable: true,  
+            },
+        });
+    </script>
 </body>
 </html>
